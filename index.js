@@ -7,7 +7,7 @@ var cors = require("cors");
 var bodyParser = require("body-parser");
 var sqlite3 = require("sqlite3").verbose();
 const bcrypt = require("bcrypt");
-const saltRounds = 10; // 10 rodadas por salt
+const saltRounds = 10; // 10 rodadas por salt (criptografia das senhas)
 
 var port = process.env.PORT || 3000;
 var CAMINHO_DB = "uberDB.db";
